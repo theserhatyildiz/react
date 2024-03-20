@@ -1,7 +1,15 @@
-function Product()
+function Product(props)
 {
+
     return (
-        <h1> I am a product component</h1>
+        <div className="product">
+
+            <h3>{props.name}</h3>
+            <h4>{props.price}</h4>
+            <h4>{props.specs.ram}</h4>
+            <h4>{props.category}</h4>
+
+        </div>
     )   
 }
 

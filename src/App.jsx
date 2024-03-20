@@ -5,13 +5,13 @@ function App() {
 
   return (
     <div>
-    <h1>Hello There</h1>
+    <h1>Main Component</h1>
 
-    <Product/>
-    <Product/>
-    <Product/>
-    <Product/>
-    
+    <Product name="iphone 14" price="$2000" specs={{ram:"2gb", screen:"6.7in"}} category={"Smartphones"} />
+
+    <Product name="Samsing Pro"price="$2000" specs={{ram:"2gb", screen:"6.7in"}} category={"Smartphones"} />
+
+
     </div>
   )
 }
