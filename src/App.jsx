@@ -6,6 +6,8 @@ import Country from './Country'
 
 function App() {
 
+  let [isLoggedIn,setIsLoggedIn] = useState(false)
+
   let [countries,setCountries] = useState(
     [
       {name:"China", capital: "Beijing", pop:"1.4B"},
@@ -29,6 +31,18 @@ function App() {
     <div>
     <h1>Main Component</h1>
 
+    {
+      isLoggedIn==false? 
+      (<h1>Please Log In</h1>)
+      :      countries.map((country) =>{
+
+        return (
+          <Country name={country.name} capital={country.capital} pop={country.pop}/>
+        )
+
+      })
+    }
+
     <button onClick={loadNewCountries}>Load New Countries</button>
 
     {/* <Product name="iphone 14" price="$2000" specs={{ram:"2gb", screen:"6.7in"}} category={"Smartphones"} />
@@ -37,7 +51,7 @@ function App() {
 
     {/* <User/> */}
 
-    {
+    {/* {
       countries.map((country) =>{
 
         return (
@@ -45,7 +59,7 @@ function App() {
         )
 
       })
-    }
+    } */}
 
     </div>
   )
