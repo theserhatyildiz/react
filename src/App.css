@@ -12,3 +12,10 @@
   padding: 1rem;
   margin: 1rem;
 }
+
+.country {
+  width: fit-content;
+  background-color: lightgray;
+  padding: 1rem;
+  margin: 1rem;
+}
